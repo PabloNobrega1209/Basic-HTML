@@ -1,0 +1,248 @@
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    background-color: rgb(219, 217, 214);
+  }
+
+.cabecario{
+    background-color: black;
+    width: 100%;
+}
+.barrinha{
+    
+}
+  
+.sidenav {
+    height: 30px;
+    width: 100%;
+    top: 223px;
+    left: 0;
+    background-color: #004AAD;
+    padding-top: 5px;
+    display: flex;
+  }
+  
+.sidenav a {
+    padding: 6px 6px 6px 32px;
+    margin-left: 220px;
+    width: 50px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: flex;
+  }
+  
+.sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+.main {
+
+    margin-left: 280px; /* Same as the width of the sidenav */
+    margin-right: 280px;
+    margin-bottom: 80px;
+    background-color: white;
+    border-radius: 15px;
+  }
+
+h1{
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  border-radius: 15px 15px 0px 0px;
+  background-color: GRAY;
+  justify-content: center;
+  display: flex;
+}
+
+h3{
+  display: flex;
+  justify-content: center;
+}
+
+p{
+  justify-content: center;
+  display: flex;
+}
+
+pre{
+  font-size: 16px;
+  color: #004AAD;
+}
+
+img{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: 300px;
+}
+
+.imagem{
+  margin-left: 30px;
+}
+
+.pobre{
+  color: #f1f1f1;
+}
+
+.p-classe{
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.text{
+  font-size: 20px;
+}
+
+.codigo{
+  color: #004AAD;
+}
+
+.especial{
+  color: red;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+a{
+  margin-bottom: 50px;
+  margin-left: 430px;
+}
+
+table{
+  margin-left: 130px;
+  margin-right: 50px;
+  background-color: gray ;
+  border-radius: 10px;
+}
+
+ul{
+  margin-left: 30px;
+}
+
+ol{
+  margin-left: 30px;
+}
+
+td{
+  font-size: 30px;
+}
+th{
+  font-size: 30px;
+}
+.destaque{
+  color: red;
+}
+
+.lista{
+  margin-left: 400px;
+  font-size: 20px;
+}
+
+.teste{
+  background-color: red;
+  border-radius: 10px;
+  width: 300px;
+  height: 200px;
+  margin-left: 350px;
+}
+
+.blue{
+  background-color: blue;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.red{
+  background-color: red;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.green{
+  background-color: green;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.white{
+  background-color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+.orange{
+  background-color: orange;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.musica{
+  margin-left: 350px;
+}
+
+.video{
+  margin-left: 220px;
+}
+
+.divizinha{
+  background-color: gray;
+  margin-left: 250px;
+  margin-right: 250px;
+  font-size: 25px;
+}
+
+.pre{
+  margin-left: 300px;
+}
+
+.prezinho{
+  margin-left: 125px;
+}
+
+.pre2{
+  margin-left: 375px;
+}
+
+canvas {
+  margin-left: 270px;
+  border: 1px solid black; /* Adiciona uma borda preta ao redor do Canvas */
+}
+
+svg {
+  margin-left: 380px;
+  border: 1px solid black; /* Adiciona uma borda preta ao redor do SVG */
+}
+
+footer {
+  background-color: #000000;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-content p {
+  margin: 5px 0;
+}
+
+.footer-content p:first-child {
+  font-weight: bold;
+}

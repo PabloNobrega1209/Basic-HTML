@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>
+        HTML
+    </title>
+</head>
+<body>
+
+    <div class="cabecario">
+        <img class="imagem" src="imagens/logo.png" width="400px" height="220px">
+
+        <div class="barrinha">
+
+        </div>
+
+        <div class="sidenav">
+            <a href="index.html">HOME</a>
+            <a href="pag1.html">BÁSICO</a>
+            <a href="design.html">FRONT</a>
+            <a href="pag2.html">OUTROS</a>
+        </div>
+    </div>
+
+    </div>
+
+    <H2></H2>
+    <p></p>
+
+    <div class="main">
+        <h2>HTML Basic</h2>
+        <p class="p-classe">HTML (HyperText Markup Language) é a linguagem padrão para a criação e exibição de páginas da web.
+           Aqui você encontrará um resumo das noções básicas de HTML:</p>
+
+        <p class="p-classe">
+            Estrutura Básica: Um documento HTML começa com uma declaração !DOCTYPE html que define o tipo de documento. 
+            Em seguida, o conteúdo é envolvido em tags html, que contêm duas seções principais: head e body.
+            Tags: As tags HTML são os blocos de construção fundamentais. Elas são delimitadas por < e >.</p>
+        <p class="p-classe">
+            Existem tags de abertura tag e tags de fechamento /tag. As tags de abertura indicam o início de um elemento
+            e as de fechamento indicam o final. Alguns elementos podem ser auto-fechados, como img.
+            Lembrando que todas essas tags devem estar entre o sinal de maior e menor: < ></p>
+        <p class="p-classe">
+            Aqui está um exemplo desses comandos:
+        </p>
+
+        <div quadradinho>
+            <p>
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    &lt;head&gt;
+                        &lt;title&gt;Exemplo HTML&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        &lt;h1&gt;HTML Básico&lt;/h1&gt;
+                        &lt;h2&gt;HTML Básico&lt;/h2&gt;
+                        &lt;h3&gt;HTML Básico&lt;/h3&gt;
+                        &lt;p&gt;Este é um exemplo simples de HTML básico.&lt;/p&gt;
+                        &lt;img src="exemplo.jpg" alt="Exemplo de imagem"&gt;
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                </pre>
+                
+            </p>
+        </div>
+
+                <pre>
+                    &lt;!DOCTYPE html&gt;: Declaração do tipo de documento HTML.
+                    &lt;html&gt;: Tag que envolve todo o documento HTML.
+                    &lt;head&gt;: Contém informações do cabeçalho, como título da página.
+                    &lt;title&gt;: Define o título da página exibido na barra de título do navegador.
+                    &lt;body&gt;: Contém o conteúdo visível da página.
+                    &lt;h1&gt;: Define um título de tamanho 1.
+                    &lt;h2&gt;: Define um título de tamanho 2.
+                    &lt;h3&gt;: Define um título de tamanho 3.
+                    &lt;p&gt;: Define um parágrafo.
+                    &lt;img&gt;: Insere uma imagem na página, com atributos src para o caminho da imagem
+                </pre>
+
+        <p class="p-classe">
+            Exemplo para inserir imagem:</p>
+
+                    <pre>
+                        &lt;img src="imagens/exemplo.jpg" alt="Exemplo de imagem"&gt;
+                    </pre>
+
+            <img src="imagens/simbolo.png" width="360px" height="400px">
+
+        <p class="especial">
+            Lembrando que para que o comando da imagem funcione é necessário que a imagem esteja na mesma pasta 
+            onde estão localizados os outros arquivos do site</p>
+    </div>
+
+    <div class="main">
+        <h2>HTML Elements/ link</h2>
+        <p class="p-classe">Esses são apenas alguns dos elementos HTML mais comuns. 
+            Cada elemento tem sua própria função e propósito, permitindo a criação de páginas 
+            da web estruturadas e funcionais.</p>
+        <p class="p-classe">Tag a: Link para um site externo. Esta tag tem como funcionalidade colocar um link externo no site</p>
+        <p class="p-classe">Exemplo:</p>
+        <p>
+            <pre>
+                &lt;a href="https://www.exemplo.com">Link Exemplo/a&gt;
+            </pre>
+        </p>
+
+        <a href="https://www.exemplo.com">Link Exemplo</a>
+    </div>
+
+    <div class="main">
+        <h2>Styles</h2>
+        <p class="p-classe">
+            Em HTML, os estilos podem ser aplicados de várias maneiras para controlar a aparência e o layout dos elementos na página da web.
+            Aqui estão as principais maneiras de aplicar estilos em HTML:</p>
+        <p class="p-classe">
+            <pre>
+                &lt;p style="color: blue; font-size: 18px;"&gt;Este é um parágrafo estilizado.&lt;/p&gt;
+            </pre>
+            <p style="color: blue; font-size: 18px;">Este é um parágrafo estilizado.</p>
+
+        <p class="p-classe">
+            Os estilos internos são definidos no cabeçalho do documento HTML usando a tag style.</p>
+        <p class="p-classe">
+            <pre>
+                &lt;style&gt;
+                    p {
+                        color: red;
+                        font-size: 16px;
+                    }
+                &lt;/style&gt;
+            </pre>
+    </div>
+
+    <div class="main">
+        <h2>Cores</h2>
+        <p class="p-classe">
+            "Cores são especificadas com nomes de cores em inglês predefinidos, ou com valores RGB, HEX, HSL, RGBA ou HSLA.</p> 
+        <div class="blue">blue</div>
+        <div class="red">red</div>
+        <div class="green">green</div>
+        <div class="white">white</div>
+        <div class="orange">orange</div>
+    </div>
+
+    <div class="main">
+        <h2>Tag ul</h2>
+        <p class="p-classe">Tag ul: é usada para criar uma lista não ordenada. Em uma lista não ordenada,
+             os itens são apresentados sem uma numeração específica ou ordem sequencial. 
+             Cada item é representado por um marcador, que por padrão é um ponto.</p>
+        <p class="p-classe">Exemplo:</p>
+        <p>
+            <pre>
+                &lt;ul&gt;
+                    &lt;li&gt;Item 1&lt;/li&gt;
+                    &lt;li&gt;Item 2&lt;/li&gt;
+                    &lt;li&gt;Item 3&lt;/li&gt;
+                &lt;/ul&gt;
+            </pre>
+        </p>
+
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <p class="p-classe">Você pode estilizar a lista não ordenada, alterando o tipo de marcador
+             (por exemplo, usando imagens ou estilização CSS), ajustando o espaçamento entre os itens
+              e personalizando outros aspectos visuais para atender às necessidades do seu design.</p>
+    </div>
+
+    <div class="main">
+        <h2>Tag ol</h2>
+        <p class="p-classe">Tag ol: é usada para criar uma lista ordenada. Em uma lista ordenada
+            , os itens são apresentados em uma sequência específica e são numerados automaticamente. 
+            Cada item é representado por um número ou outro tipo de marcador, dependendo do estilo definido.</p>
+        <p class="p-classe">Exemplo:</p>
+        <p>
+            <pre>
+                &lt;ol&gt;
+                    &lt;li&gt;Primeiro item&lt;/li&gt;
+                    &lt;li&gt;Segundo item&lt;/li&gt;
+                    &lt;li&gt;Terceiro item&lt;/li&gt;
+                &lt;/ol&gt;
+            </pre>
+        </p>
+
+        <ol>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+
+        <p class="p-classe">Neste exemplo, temos uma lista ordenada com três itens. Cada item é definido pela tag li.
+             Quando este código é renderizado no navegador, os itens são exibidos em ordem sequencial, com cada item
+              numerado automaticamente.</p>
+    </div>
+
+    <div class="main">
+        <h2>Tag Table</h2>
+        <p class="p-classe">Tag table: é usada para criar uma tabela que organiza dados em linhas e colunas. 
+            É uma estrutura tabular que pode ser usada para exibir informações de forma organizada e fácil de ler.</p>
+        <p class="p-classe">Exemplo:</p>
+        <p>
+            <pre>
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Nome&lt;/th&gt;
+                        &lt;th&gt;Idade&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;João&lt;/td&gt;
+                        &lt;td&gt;30&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Maria&lt;/td&gt;
+                        &lt;td&gt;25&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+            </pre>
+
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                    </tr>
+                    <tr>
+                        <td>João</td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>25</td>
+                    </tr>
+                </table>
+
+        </p>
+
+        <p class="p-classe">Aqui, temos uma tabela com duas colunas: "Nome" e "Idade". Cada linha representa uma pessoa
+             com seus respectivos dados. As células de cabeçalho (<th>) são usadas para identificar os dados em cada coluna,
+                 enquanto as células de dados (<td>) contêm os valores reais..</p>
+    </div>
+    
+    <div class="main">
+        <h2>HTML Attributes</h2>
+        <p class="p-classe">
+            Claro! Os atributos HTML são usados para fornecer informações adicionais sobre elementos HTML e para controlar
+             seu comportamento e aparência. Abaixo está um resumo sobre os atributos HTML mais comuns:</p>
+        <ol>
+            <li>Atributos Globais:</li>
+                <p class="p-classe">São atributos comuns que podem ser usados em praticamente todos os elementos HTML,
+                    como por exemplo id, class, style, title, etc.
+                </p>
+             <li>Atributo Id:</li>
+                <p class="p-classe">É usado para definir um identificador exclusivo para um elemento. Cada ID em um documento
+                     HTML deve ser único, ou seja, não pode ser compartilhado por mais de um elemento na mesma página.</p>
+                <p>Exemplo:</p>
+                <pre>
+                    &lt;div id="meuId"&gt;&lt;/div&gt;
+                </pre>
+            <li>Atributo Class:</li>
+                <p class="p-classe"> É usado em elementos HTML para atribuir uma ou mais classes a esses elementos.
+                     As classes são usadas principalmente para aplicar estilos CSS. Ela também permite que você associe
+                     um ou mais nomes de classes a um elemento HTML.</p>
+                <p>Exemplo:</p>
+                <pre>
+                    &lt;p class="destaque"&gt;Este parágrafo está em destaque.&lt;/p&gt;
+                </pre>
+
+                <p class="destaque">Este parágrafo está em destaque.</p>
+
+                <p class="p-classe">Neste exemplo, a classe "destaque" foi atribuída ao parágrafo usando o atributo class.
+                     Isso permite que você aplique estilos específicos ao parágrafo com essa classe, tanto em um arquivo CSS
+                      externo quanto em um estilo inline.</p>
+
+            <li>Atributo Style:</li>
+                 <p class="p-classe"> É usado para aplicar estilos CSS diretamente a um elemento HTML, sem a necessidade de
+                     um arquivo de estilo externo ou uma tag style. Com o atributo style, você pode definir propriedades de
+                      estilo específicas para um elemento, como cor, tamanho, fonte, margem, etc.</p>
+                <p>Exemplo:</p>
+                <pre>
+                    &lt;p style="color: blue; font-size: 16px;"&gt;Este é um parágrafo estilizado.&lt;/p&gt;
+                </pre>
+      
+                <p style="color: blue; font-size: 16px;">Este é um parágrafo estilizado.</p>
+      
+                <p class="p-classe">Neste exemplo, aplicamos o estilo diretamente ao elemento p usando o atributo style.
+                     Definimos a cor do texto como azul (color: blue;) e o tamanho da fonte como 16 pixels (font-size: 16px;).
+                      Qualquer estilo definido dentro do atributo style será aplicado 
+                      apenas ao elemento em que está definido.</p>
+        </ol>
+    </div>
+
+    <div class="main">
+        <h2>DIV</h2>
+        <p class="p-classe">Tag Div: não possui nenhum significado semântico específico. Ela é usada principalmente como uma caixa
+             de layout genérica para agrupar e estruturar elementos HTML, facilitando a organização do conteúdo de uma página da web.</p>
+        <p class="p-classe">Ela é frequentemente combinada com outros elementos HTML e estilos CSS para criar layouts mais complexos
+             e estruturados.</p>
+        <p class="p-classe">Ela é amplamente usada para criar seções distintas em uma página da web, como cabeçalhos, rodapés, barras
+             laterais, contêineres de conteúdo, etc.</p>
+        <p class="p-classe">Exemplo:</p>
+        <p class="p-classe">
+            <pre>
+                &lt;div&gt;
+                    &lt;h1>Título da Página</h1&gt;
+                    &lt;p>Este é um parágrafo dentro de uma divisão.&lt;/p&gt;
+                &lt;/div&gt;
+            </pre>
+        </p>
+
+        <p class="p-classe">Neste exemplo simples, a tag div é usada para criar um contêiner que envolve um título de 
+             página, um parágrafo e uma imagem.
+             Isso permite agrupar esses elementos relacionados em uma única seção da página, facilitando a aplicação de estilos ou 
+             manipulação com JavaScript, se necessário.</p>
+
+        <p class="p-classe">Estilizando a Div no Css:</p>
+
+        <p>
+            <pre>
+                div {
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    background-color: red;
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                    border-radius: 10px;
+                    width: 300px;
+                    height: 200px;
+                    margin-left: 350px;
+                }
+            </pre>
+        </p>
+
+        <p class="p-classe">
+            Neste exemplo de CSS, estamos aplicando estilos a todas as tags div na página. Definimos uma borda, preenchimento e margem
+             para fornecer uma aparência visual agradável e separar as divisões entre si, além de uma cor de fundo, uma borda, tamanho e etc.
+        </p>
+
+        
+
+        <div class="teste">
+            <h1>Título da Página</h1>
+            <p>Este é um parágrafo dentro de uma div.</p>
+        </div>
+
+        <p class="p-classe">Você pode estilizar a lista não ordenada, alterando o tipo de marcador
+            (por exemplo, usando imagens ou estilização CSS), ajustando o espaçamento entre os itens
+            e personalizando outros aspectos visuais para atender às necessidades do seu design.</p>
+
+        <p class="p-classe">Em resumo, a tag div é uma ferramenta poderosa para criar estrutura e 
+            organização em uma página da web. Ela oferece flexibilidade para agrupar e estilizar elementos 
+            relacionados e é fundamental na criação de layouts complexos e bem organizados.</p>
+    </div>
+
+    <div class="main">
+        <h2>Comments</h2>
+        <p class="p-classe">
+            Comentários em HTML são trechos de texto que são ignorados pelo navegador durante a renderização da página.
+            Eles geralmente são usados para colocar lembretes/notas no site sem que isso interfira nos comandos</p>
+        <p class="p-classe">
+            Comentários podem ser colocados usando os simbolos &lt;!-- e --&gt; </p>
+        <p class="p-classe">
+            &lt;!-- Este é um comentário em linha --&gt;</p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 I LOVE HTML - Criado por Pablo Nobrega</p>
+        <p>Fatec - Faculdade de Tecnologia de Franca</p>
+    </div>
+</footer>
+</html>

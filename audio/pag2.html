@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>
+        HTML
+    </title>
+</head>
+<body>
+
+    <div class="cabecario">
+        <img class="imagem" src="imagens/logo.png" width="400px" height="220px">
+
+        <div class="barrinha">
+
+        </div>
+
+        <div class="sidenav">
+            <a href="index.html">HOME</a>
+            <a href="pag1.html">BÁSICO</a>
+            <a href="design.html">FRONT</a>
+            <a href="pag2.html">OUTROS</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>HTML formatting</h2>
+        <p class="p-classe">Formatação HTML se refere ao uso de elementos e atributos HTML para definir a apresentação visual e a estrutura
+             do conteúdo em uma página da web. Isso inclui a definição de estilos de texto, alinhamento, listas, links, imagens e outros
+              elementos para melhorar a legibilidade e o apelo visual do conteúdo. Aqui estão alguns dos principais elementos e atributos
+               HTML usados para formatação:</p>
+        <p class="p-classe">
+            <ol>
+                <li>Textos</li>
+                <p class="p-classe">HTML fornece uma variedade de elementos para formatar texto, como h1 a h6 para títulos de diferentes
+                     níveis de importância, p para parágrafos, strong para texto em negrito, em para texto em itálico, u
+                         para sublinhar texto, s para texto tachado, sup para texto sobrescrito e sub para texto subscrito.</p>
+                <li>Listas</li>
+                <p class="p-classe">HTML permite criar listas ordenadas ol e listas não ordenadas ul, bem como listas de definição dl.
+                     Dentro desses elementos, você pode usar li para definir itens de lista.</p>
+                <li>Links</li>
+                <p class="p-classe">O elemento a é usado para criar links em HTML. Você pode definir o destino do link usando o atributo
+                     href e opcionalmente adicionar um texto âncora entre as tags de abertura e fechamento do a.</p>
+                <li>Imagens</li>
+                <p class="p-classe">O elemento img é usado para incluir imagens em uma página HTML. Você precisa fornecer o atributo src
+                     com o caminho da imagem e opcionalmente os atributos alt para texto alternativo e title para título da imagem.</p>
+                <li>Formatação de Tabelas</li>
+                <p class="p-classe">HTML permite criar tabelas usando os elementos table, tr para linhas, td para células de dados e th
+                     para cabeçalhos de tabela. Você pode usar atributos como colspan e rowspan para mesclar células.</p>
+                <li>Formulários</li>
+                <p class="p-classe"> HTML fornece elementos para criar formulários, como form, input, select, textarea, button, entre outros.
+                     Estes elementos permitem a coleta de informações do usuário.</li>
+                <li>Formatação de Layout</li>     
+                <p class="p-classe">Embora a formatação de layout seja geralmente realizada com CSS, HTML também possui elementos para ajudar
+                     na estruturação do layout, como div e span, que são usados para criar contêineres e agrupar elementos para estilização
+                     e posicionamento.</p>       
+            </ol>
+
+            <p class="p-classe">Exemplos:</p>
+            <pre>
+                &lt;!-- Textos Formatados --&gt;
+                &lt;h1&gt;Título Principal&lt;/h1&gt;
+                &lt;h2&gt;Título Secundário&lt;/h2&gt;
+                &lt;h3&gt;Título Terciário&lt;/h3&gt;
+
+                &lt;p&gt;Este é um parágrafo de texto normal.&lt;/p&gt;
+                &lt;p&gt;&lt;strong&gt;Este é um parágrafo em negrito.&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;em&gt;Este é um parágrafo em itálico.&lt;/em&gt;&lt;/p&gt;
+
+                &lt;ul&gt;
+                    &lt;li&gt;Item de lista 1&lt;/li&gt;
+                    &lt;li&gt;Item de lista 2&lt;/li&gt;
+                &lt;/ul&gt;
+
+                &lt;ol&gt;
+                    &lt;li&gt;Item de lista ordenada 1&lt;/li&gt;
+                    &lt;li&gt;Item de lista ordenada 2&lt;/li&gt;
+                &lt;/ol&gt;
+
+                &lt;a href="https://www.example.com"&gt;Link para Example.com&lt;/a&gt;
+
+                &lt;img src="imagem.jpg" alt="Descrição da imagem" title="Título da imagem"&gt;
+
+                &lt;!-- Formatação de Tabelas --&gt;
+                &lt;table&gt;
+                    &lt;tr&gt;
+                        &lt;th&gt;Nome&lt;/th&gt;
+                        &lt;th&gt;Email&lt;/th&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;João&lt;/td&gt;
+                        &lt;td&gt;joao@example.com&lt;/td&gt;
+                    &lt;/tr&gt;
+                    &lt;tr&gt;
+                        &lt;td&gt;Maria&lt;/td&gt;
+                        &lt;td&gt;maria@example.com&lt;/td&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+
+                &lt;!-- Formulários --&gt;
+                &lt;form action="/submit-form" method="post"&gt;
+                    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                    &lt;input type="text" id="nome" name="nome"&gt;&lt;br&gt;
+
+                    &lt;label for="email"&gt;Email:&lt;/label&gt;
+                    &lt;input type="email" id="email" name="email"&gt;&lt;br&gt;
+
+                    &lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;&lt;br&gt;
+                    &lt;textarea id="mensagem" name="mensagem" rows="4" cols="50"&gt;&lt;/textarea&gt;&lt;br&gt;
+
+                    &lt;input type="submit" value="Enviar"&gt;
+                &lt;/form&gt;
+
+                &lt;!-- Formatação de Layout --&gt;
+                &lt;div style="background-color: #f0f0f0; padding: 10px;"&gt;
+                    &lt;h2&gt;Este é um título dentro de um contêiner DIV&lt;/h2&gt;
+                    &lt;p&gt;Este é um parágrafo dentro de um contêiner DIV.&lt;/p&gt;
+                &lt;/div&gt;
+            </pre>
+        </p>  
+        <p class="p-classe">Estes são apenas alguns exemplos básicos de formatação HTML. Você pode combiná-los e estilizá-los usando CSS
+             para criar layouts e designs mais complexos e personalizados para suas páginas da web.</p>
+    </div>
+
+    <div class="main">
+        <h2>Quotations</h2>
+        <p class="p-classe">Em HTML, as citações (quotations) são usadas para incluir texto citado dentro de um documento HTML. Existem
+             dois elementos principais que são usados para representar citações em HTML: blockquote e q.
+            
+             <ol>
+                <li>Blockquote</li>
+                    <p class="p-classe"> Este elemento é usado para representar um bloco de texto citado de outra fonte. Ele geralmente
+                         é exibido com uma margem à esquerda e/ou à direita para destacá-lo do restante do conteúdo. Exemplo:</p>
+
+                         <pre>
+                           &lt;p&gt;Texto introdutório.&lt;/p&gt;
+                           &lt;blockquote&gt;
+                                &lt;p&gt;Este é um bloco de texto citado de outra fonte.&lt;/p&gt;
+                           &lt;/blockquote&gt;
+                           &lt;p&gt;Texto após a citação.&lt;/p&gt;
+                         </pre>
+
+                         <p>Texto introdutório.</p>
+                            <blockquote>
+                                <p>Este é um bloco de texto citado de outra fonte.</p>
+                            </blockquote>
+                         <p>Texto após a citação.</p>
+
+                <li>Blockquote</li>
+                    <p class="p-classe"> Este elemento é usado para representar um bloco de texto citado de outra fonte. Ele geralmente
+                              é exibido com uma margem à esquerda e/ou à direita para destacá-lo do restante do conteúdo. Exemplo:</p>
+             </ol>
+            </p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+<!--TUDO Q TEM Q FAZER
+
+7 - HTML Formatting
+8 - HTML Quotations
+15 - HTML Block & Inline
+19 - HTML Iframes
+20 - HTML JavaScript
+21 - HTML Semantics
+23 - HTML Entities
+26 - HTML Charsets
+27 - HTML URL Encode
+28 - HTML vs XHTML
+29 - HTML Forms
+30 - HTML Form Attributes
+31 - HTML Form Elements
+32 - HTML Input Types
+33 - HTML Input Attributes
+34 - Input Form Attributes
+-->
+
+
+
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 I LOVE HTML - Criado por Pablo Nobrega</p>
+        <p>Fatec - Faculdade de Tecnologia de Franca</p>
+    </div>
+</footer>
+</html>
