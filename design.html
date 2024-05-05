@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+
+<head>
+    <title>
+        HTML
+    </title>
+</head>
+<body>
+
+    <div class="cabecario">
+        <img class="imagem" src="imagens/logo.png" width="400px" height="220px">
+
+        <div class="barrinha">
+
+        </div>
+
+        <div class="sidenav">
+            <a href="index.html">HOME</a>
+            <a href="pag1.html">BÁSICO</a>
+            <a href="design.html">FRONT</a>
+            <a href="pag2.html">OUTROS</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>MEDIA</h2>
+        <p class="p-classe">O termo "HTML media" se refere ao uso de elementos HTML para integrar e exibir diferentes tipos de mídia,
+             como áudio, vídeo e imagens, em páginas da web. Existem várias tags HTML específicas para diferentes tipos de mídia. 
+             Aqui estão algumas das principais:</p>
+
+        <h3>IMAGEM</h3>
+        <p class="p-classe">Como já dito na página sobre HTML básico, a tag img é usada para exibir imagens em uma página da web.
+             Você especifica o caminho para a imagem usando o atributo </p>
+             <pre>
+                &lt;img src="caminho/para/sua/imagem.jpg" alt="Descrição da imagem"&gt;
+             </pre>
+            <img src="imagens/simbolo.png" alt="Descrição da imagem" width="360px" height="400px">  
+
+        <h3>AUDIO</h3>
+        <p class="p-classe"> A tag audio é usada para incorporar arquivos de áudio em uma página. Como já diz o seu nome.
+             Você pode especificar o arquivo de áudio usando o atributo src.</p>
+
+             <pre>
+                &lt;audio controls class="musica"&gt;
+                    &lt;source src="audio/audio.mp3" type="audio/mpeg"&gt;
+                    Seu navegador não suporta o elemento de áudio.
+                &lt;/audio&gt;
+             </pre>
+
+             <audio controls class="musica">
+                <source src="audio/audio.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+              </audio>
+
+        <h3>VIDEO</h3>
+        <p class="p-classe">A tag video como tembém já diz o nome é usada para incorporar vídeos em uma página.
+             Assim como em audio, você especifica o arquivo de vídeo usando o atributo src.</p>
+
+             <pre>
+             &lt;video controls class="video" width="500px" height="270px"&gt;
+                    &lt;source src="video/video.mp4" type="video/mp4"&gt;
+             &lt;/video&gt;
+             </pre>
+
+        <video controls class="video" width="500px" height="270px">
+            <source src="video/video.mp4" type="video/mp4">
+        </video>
+
+        <h3>DRAG/DROP</h3>
+        <p class="p-classe">Uma drag zone é uma funcionalidade que permite aos usuários arrastar elementos HTML e soltá-los em uma área específica
+             da página da web. Essa funcionalidade é comumente usada em aplicativos da web para permitir interações intuitivas, 
+             como reorganizar itens em uma lista, fazer upload de arquivos arrastando e soltando, ou até mesmo criar interfaces de 
+             usuário complexas.</p>
+
+        <p class="p-classe">Exemplo:</p>
+
+            <pre>
+                &lt;div draggable="true"&gt;Arraste-me&lt;/div&gt;
+            </pre>
+
+            <div class="divizinha" draggable="true">Arraste-me</div>
+
+        <p class="p-classe">Já na drop zone você define áreas onde os elementos podem ser soltos usando eventos JavaScript.
+             Normalmente, essas áreas são elementos onde os itens arrastados podem ser soltos. </p>
+
+             <pre>
+                &lt;div class="divizinha" id="area-de-soltar"&gt;Solte aqui&lt;/div&gt;
+             </pre>
+
+             <div class="divizinha" id="area-de-soltar">Solte aqui</div>
+
+        <p class="p-classe">Você usa eventos JavaScript para controlar o comportamento do arrastar e soltar. Os eventos principais são dragstart,
+             drag, dragend, dragenter, dragover, dragleave e drop.</p>
+
+
+        <h3>Favicon</h3>
+        <p class="p-classe">O favicon é uma pequena imagem, geralmente com tamanho de 16x16 pixels ou 32x32 pixels, que é associada a um site
+             ou página da web. Ele é exibido na barra de endereço do navegador, nas guias (tabs) do navegador e em outros locais, como nas 
+             listas de favoritos ou na página inicial do navegador.</p>
+        <p class="p-classe">Para adicionar um favicon a um site, você precisa incluir uma linha de código dentro do elemento head do seu
+             documento HTML, especificando o caminho para o arquivo de imagem do favicon.</p>
+        <p class="p-classe">Aqui está um exemplo:</p>
+
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Minha Página&lt;/title&gt;
+                &lt;!-- Adicionando o favicon --&gt;
+                &lt;link rel="icon" type="image/png" href="caminho/para/seu/favicon.png"&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;!-- Conteúdo da sua página --&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+
+        <p class="especial">Agora observe a sua guia do site no navegador, há um favicon ao lado esquerdo do nome do site</p>
+
+        <h3>Symbols</h3>
+        <p class="p-classe">HTML symbols, ou entidades HTML, são códigos especiais usados para representar caracteres especiais,
+             como símbolos, caracteres acentuados, e outros caracteres que não podem ser facilmente digitados ou que podem causar
+              problemas de formatação em documentos HTML.</p>
+        <p class="p-classe">Exemplo:</p>
+        <p class="p-classe">&amp;copy; - representa o símbolo de direitos autorais '©'.</p>
+        <pre class="prezinho">
+            &lt;p&gt;&amp;copy; 2024 I LOVE HTML - Criado por Pablo Nobrega&lt;/p&gt;
+        </pre>
+        <p>&copy; 2024 I LOVE HTML - Criado por Pablo Nobrega</p>
+
+        <p class="p-classe">Outros exemplos de simbolos são: &amp;lt;, &amp;gt; e &amp;quot;</p>
+
+        <h3>Emojis</h3>
+        <p class="p-classe">Emojis são símbolos gráficos amplamente utilizados para expressar emoções, sentimentos e ideias em
+             comunicações digitais. Eles ganharam popularidade significativa na cultura digital e são comumente usados em mensagens
+              de texto, mídias sociais e, claro, em páginas da web. Em HTML, você pode incluir emojis de várias maneiras:</p>
+
+        <p class="p-classe">Unicode: A maneira mais simples de adicionar emojis em HTML é usar Unicode, que é um padrão de codificação de caracteres que
+         inclui uma vasta gama de emojis. Você pode simplesmente copiar e colar emojis diretamente no seu código HTML. Por exemplo:</p>
+
+         <pre class="pre2">
+            &#x1F601; <!-- 😁 -->
+         </pre>
+
+         <p class="p-classe">Código do emoji:</p>
+         <pre class="pre">
+            &amp;#x1F601; &lt;!-- 😁 --&gt;
+         </pre>
+
+         <p class="p-classe">Elementos de Imagem: Você também pode usar imagens de emojis em vez de caracteres Unicode ou entidades HTML.
+             Existem várias bibliotecas de emojis disponíveis, e você pode referenciar essas imagens como faria com qualquer outra imagem
+              em HTML. Por exemplo:</p>
+
+              <pre>
+                &lt;img src="caminho/para/seu/emoji.png" alt="Emoji feliz"&gt;
+              </pre>
+
+            <img src="imagens/emoji.png" alt="Emoji feliz" width="50px" height="40px">
+
+
+
+        <h3>Canvas</h3>
+        <p class="p-classe">O HTML Canvas é uma poderosa ferramenta na web que permite desenhar gráficos, criar animações e interações
+             diretamente no navegador usando JavaScript. Ele fornece uma área de desenho dinâmica dentro de uma página HTML, na qual você
+              pode desenhar formas, linhas, texto e imagens de maneira programática.</p>
+        <p class="p-classe"> O HTML Canvas é implementado usando o elemento canvas, que é adicionado ao código HTML onde você deseja que o
+             desenho apareça. Este elemento define uma área retangular em que os gráficos podem ser desenhados via JavaScript.</p>
+        <p class="p-classe">O Canvas fornece uma API de desenho em JavaScript, que inclui métodos para desenhar formas geométricas 
+            (como retângulos, círculos, linhas), texto, imagens e para manipular estilos de desenho (como cores, transparência, sombras).</p>
+        <p class="p-classe">Exemplo:</p>
+        <p class="p-classe">Código HTML:</p>
+            <pre>
+                &lt;canvas id="myCanvas" width="400" height="200"&gt;&lt;/canvas&gt;
+            </pre>
+
+        <p class="p-classe">Código Css:</p>
+            <pre>
+                canvas {
+                    margin-left: 270px;
+                    border: 1px solid black; /* Adiciona uma borda preta ao redor do Canvas */
+                  }                  
+            </pre>
+
+        <p class="p-classe">Código JavaScript:</p>
+            <pre>
+                // Obtém o elemento Canvas pelo ID
+                var canvas = document.getElementById('myCanvas');
+
+                // Obtém o contexto 2D do Canvas
+                var ctx = canvas.getContext('2d');
+
+                // Define a cor de preenchimento como vermelho
+                ctx.fillStyle = 'red';
+
+                // Desenha um círculo vermelho nas coordenadas (150, 100) com raio 50
+                ctx.beginPath();
+                ctx.arc(150, 100, 50, 0, 2 * Math.PI); // x, y, raio, ângulo inicial, ângulo final
+                ctx.fill();
+            </pre>
+
+            <canvas id="myCanvas" width="400" height="200"></canvas>
+
+            <h3>SVG </h3>
+                <p class="p-classe"> SVG, que significa Scalable Vector Graphics (Gráficos Vetoriais Escaláveis), é um formato de arquivo baseado em XML
+                       para descrever gráficos vetoriais bidimensionais. No contexto da web, o SVG é frequentemente usado como uma maneira de incluir 
+                       gráficos vetoriais diretamente em páginas HTML.</p>
+                <p class="p-classe">Em resumo, o HTML SVG oferece uma maneira poderosa de incluir gráficos vetoriais escaláveis ​​diretamente em páginas
+                       HTML, permitindo uma maior flexibilidade no design e interatividade através de manipulação com JavaScript e estilização com CSS.</p>
+              
+                <pre>
+                    &lt;svg width="200" height="200"&gt;
+                        &lt;circle cx="100" cy="100" r="50" fill="blue" /&gt;
+                    &lt;/svg&gt;
+                </pre>
+                <svg width="200" height="200">
+                    <!-- Círculo vermelho -->
+                    <circle cx="100" cy="100" r="50" fill="blue" />
+                </svg>
+        </div>        
+
+        <div class="main">
+            <h2>Style Guide</h2>
+            <p class="p-classe">Um guia de estilo HTML é um conjunto de diretrizes que definem as melhores práticas para escrever código
+                 HTML de maneira consistente e legível. Ele ajuda a garantir que o código HTML seja fácil de entender, manter e colaborar
+                  entre diferentes desenvolvedores. Aqui estão alguns aspectos comuns abordados em um guia de estilo HTML:</p>
+
+                <ol>
+                    <li>Indentação e Formatação</li>
+                        <p class="p-classe">O guia de estilo geralmente define regras para a indentação e formatação do código HTML.
+                             Isso pode incluir o uso consistente de espaços em branco, tabulações e quebras de linha para melhorar a
+                              legibilidade do código.</p>
+
+                    <li>Nomenclatura de Elementos e Atributos</li>
+                        <p class="p-classe">O guia pode fornecer diretrizes sobre a nomenclatura de elementos HTML e atributos.
+                             Isso inclui o uso consistente de letras maiúsculas/minúsculas, nomes descritivos e evitando abreviações
+                              desnecessárias.</p>
+
+                    <li>Atributos de Elementos</li>
+                        <p class="p-classe">Ele pode definir quais atributos devem ser usados e em que ordem devem aparecer. Por exemplo,
+                             pode recomendar o uso de class antes de id e agrupamento de atributos relacionados.</p>
+
+                    <li>Uso de Elementos Semânticos</li>
+                        <p class="p-classe">O guia pode incentivar o uso de elementos HTML semânticos adequados, como header,
+                             nav, main, article, section, etc., para melhorar a acessibilidade e a estruturação do conteúdo.</p>
+
+                    <li>Comentários</li>
+                        <p class="p-classe">Pode incluir diretrizes sobre o uso de comentários no código HTML para documentar partes
+                             importantes do código, como seções, seções de marcação, hacks específicos ou soluções alternativas.</p>
+
+                    <li>Validação do HTML</li>
+                        <p class="p-classe">Pode recomendar o uso de ferramentas de validação HTML para garantir que o código HTML seja
+                             válido e esteja em conformidade com os padrões estabelecidos. Performance e SEO: O guia pode incluir práticas
+                              recomendadas para melhorar o desempenho do site, como minimização de uso de tabelas para layout, uso eficiente
+                               de tags semânticas para SEO, e evitando o uso excessivo de elementos HTML para reduzir o peso da página.</p>
+                </ol>
+
+                <p class="p-classe">É importante ressaltar que um guia de estilo HTML pode variar de acordo com as necessidades e preferências da 
+                    equipe de desenvolvimento ou da empresa, e pode ser adaptado para atender às especificidades de um projeto ou organização. 
+                    Ele serve como uma referência útil para promover consistência e qualidade no código HTML produzido.</p>
+            
+        </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2024 I LOVE HTML - Criado por Pablo Nobrega</p>
+        <p>Fatec - Faculdade de Tecnologia de Franca</p>
+    </div>
+</footer>
+</html>
