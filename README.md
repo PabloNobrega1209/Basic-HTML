@@ -25,6 +25,14 @@ Neste site, você encontrará uma variedade de recursos, incluindo:
 ## Sobre o Autor
 - Este projeto pessoal, concebido por @PabloNobrega1209, tem como objetivo fornecer recursos educacionais abrangentes e acessíveis sobre HTML básico, visando capacitar iniciantes e entusiastas da web com habilidades fundamentais para criar suas próprias páginas da web. Além disso, busca criar uma comunidade colaborativa onde os usuários possam compartilhar experiências, fazer perguntas e colaborar no desenvolvimento de conteúdo.
 
+## Prints do Site
+
+![Texto alternativo da imagem](prints_site/print1.png)
+![Texto alternativo da imagem](prints_site/print2.png)
+![Texto alternativo da imagem](prints_site/print3.png)
+
+## Link
+
 ## Como Contribuir
 
 Este projeto é de código aberto e recebe contribuições da comunidade. Se você encontrar erros, tiver sugestões de melhorias, ou gostaria de contribuir com novos conteúdos, sinta-se à vontade para abrir uma issue ou enviar um pull request. Todas as contribuições são bem-vindas e ajudam a melhorar o site para todos os seus usuários.
