@@ -1,4 +1,4 @@
-# Site Introspetivo ao HTML
+# Site I love HTML
 
 Bem-vindo ao Site I LOVE HTML! Este site foi criado como uma atividade para a matéria de desenvolvimento web com o objetivo de fornecer uma introdução básica ao HTML (Hypertext Markup Language) para iniciantes.
 
@@ -20,7 +20,10 @@ Neste site, você encontrará uma variedade de recursos, incluindo:
 - **Home**: Na home Page do site você encontrará um breve sumário onde você poderá procurar e encontrar a informação da qual você necessita.
 - **Básico**: Na página "Básico" você irá encontrar o básico sobre HTML com códigos funcionais e que demonstram extamente o que as tag fazem.
 - **FRONT**: Na página "Front" você poderá encontrar diversas tags que exemplificam coisas para deixar o site mais complexo e bonito, como por exemplo, como colocar imagens, videos, audios, canvas, etc. 
-- **OUTROS**: Na página "Outros" você encontrará tags e informações mais complexas sobre HTML, porém tendo em mente os conhecimentos já adquiridos nas outras páginas, não será de grande dificuldade. 
+- **OUTROS**: Na página "Outros" você encontrará tags e informações mais complexas sobre HTML, porém tendo em mente os conhecimentos já adquiridos nas outras páginas, não será de grande dificuldade.
+
+## Sobre o Autor
+- Este projeto pessoal, concebido por @PabloNobrega1209, tem como objetivo fornecer recursos educacionais abrangentes e acessíveis sobre HTML básico, visando capacitar iniciantes e entusiastas da web com habilidades fundamentais para criar suas próprias páginas da web. Além disso, busca criar uma comunidade colaborativa onde os usuários possam compartilhar experiências, fazer perguntas e colaborar no desenvolvimento de conteúdo.
 
 ## Como Contribuir
 
