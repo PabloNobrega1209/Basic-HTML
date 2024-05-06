@@ -27,11 +27,13 @@ Neste site, você encontrará uma variedade de recursos, incluindo:
 
 ## Prints do Site
 
-![Texto alternativo da imagem](prints_site/print1.png)
-![Texto alternativo da imagem](prints_site/print2.png)
-![Texto alternativo da imagem](prints_site/print3.png)
+!(prints_site/print1.png)
+!(prints_site/print2.png)
+!(prints_site/print3.png)
 
 ## Link
+
+[Site I Love HTML](URL_do_Link)
 
 ## Como Contribuir
 
