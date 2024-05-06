@@ -27,7 +27,7 @@ Neste site, você encontrará uma variedade de recursos, incluindo:
 
 ## Link
 
-[Site I Love HTML](URL_do_Link)
+[Site I Love HTML](https://basic-html-orcin.vercel.app)
 
 ## Como Contribuir
 
