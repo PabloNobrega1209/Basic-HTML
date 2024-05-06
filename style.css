@@ -246,3 +246,21 @@ footer {
 .footer-content p:first-child {
   font-weight: bold;
 }
+
+iframe{
+  margin-left: 180px;
+}
+
+.magem{
+  margin-left: 250px;
+  margin-right: 300px;
+}
+
+form{
+  margin-left: 100px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px; /* Adiciona um espaço entre as labels */
+}

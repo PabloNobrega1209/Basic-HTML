@@ -11,3 +11,4 @@ ctx.fillStyle = 'red';
 ctx.beginPath();
 ctx.arc(150, 100, 50, 0, 2 * Math.PI); // x, y, raio, ângulo inicial, ângulo final
 ctx.fill();
+

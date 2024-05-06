@@ -148,29 +148,502 @@
                             </blockquote>
                          <p>Texto após a citação.</p>
 
-                <li>Blockquote</li>
-                    <p class="p-classe"> Este elemento é usado para representar um bloco de texto citado de outra fonte. Ele geralmente
-                              é exibido com uma margem à esquerda e/ou à direita para destacá-lo do restante do conteúdo. Exemplo:</p>
+                <li>Tag q</li>
+                    <p class="p-classe"> Este elemento é usado para representar uma citação curta dentro do texto. Por padrão,
+                         navegadores costumam envolver a citação com aspas.Exemplo:</p>
+
+                        <pre>
+                            &lt;p&gt;Alguns dizem que &lt;q&gt;o silêncio é de ouro&lt;/q&gt;.&lt;/p&gt;
+                        </pre>
+
+                         <p>Alguns dizem que <q>o silêncio é de ouro</q>.</p>
              </ol>
             </p>
+
+            <p class="p-classe">Além desses elementos, você pode usar atributos adicionais para fornecer informações contextuais sobre as
+                 citações, como cite, que especifica a URL da fonte da citação.</p>
+                 
+                 <pre>
+                    &lt;blockquote cite="https://www.example.com/citacao"&gt;
+                        &lt;p&gt;Este é um bloco de texto citado de outra fonte.&lt;/p&gt;
+                    &lt;/blockquote&gt;
+                 </pre>
+
+                 <blockquote cite="https://www.disney.com">
+                    <p>Este é um bloco de texto citado de outra fonte.</p>
+                </blockquote>
+
+            <p class="p-classe">Em resumo, em HTML, as citações são representadas usando os elementos blockquote e q, permitindo que os
+                 desenvolvedores destaquem e identifiquem o texto citado dentro de um documento HTML.</p>
     </div>
 
+    <div class="main">
+        <h2>Block & Inline</h2>
+        <p class="p-classe">Em HTML, elementos são classificados como "bloco" (block) ou "em linha" (inline), dependendo de como eles são
+             exibidos na página da web e de como eles interagem com outros elementos. Essa classificação afeta o layout e o comportamento
+              dos elementos na página.</p>
+        <ol>
+            <li>Elementos de Bloco (Block Elements):</li>
+            <p class="p-classe">
+                Os elementos de bloco ocupam todo o espaço horizontal disponível em seu contêiner pai e começam em uma nova linha.
+                Eles geralmente são usados para estruturar o layout da página e incluem elementos como div, p, h1 a h6, ul, ol, li, table, form, entre outros.</p>
+
+            <li>Elementos em Linha (Inline Elements):</li>
+            <p class="p-classe">Os elementos em linha são exibidos na mesma linha que o conteúdo que os rodeia e ocupam apenas o espaço
+                necessário para o conteúdo. Eles são frequentemente usados para marcar partes do texto e incluem elementos como span, a,
+                 strong, em, img, input, button, entre outros.</p>
+        </ol>
+
+        <p class="especial">Aqui está um exemplo simples que ilustra a diferença entre elementos de bloco e em linha:</p>
+
+        <pre>
+            &lt;div class="block"&gt;
+            &lt;h1&gt;Elemento de Bloco&lt;/h1&gt;
+                &lt;p&gt;Este é um parágrafo de texto dentro de um elemento de bloco.&lt;/p&gt;
+            &lt;/div&gt;
+
+            &lt;style&gt;
+            .block {
+                background-color: lightblue;
+                border: 1px solid blue;
+                margin-bottom: 10px;
+            }
+            &lt;style&gt;
+        </pre>
+        <div class="block">
+            <h1>Elemento de Bloco</h1>
+            <p>Este é um parágrafo de texto dentro de um elemento de bloco.</p>
+        </div>
+
+        <style>
+            .block {
+                background-color: lightblue;
+                border: 1px solid blue;
+                margin-bottom: 10px;
+            }
+            .inline {
+                background-color: lightgreen;
+                border: 1px solid green;
+                padding: 5px;
+            }
+        </style>
+
+        <pre>
+            &lt;span class="inline"&gt;Elemento em Linha&lt;/span&gt;
+            &lt;span class="inline"&gt;Outro elemento em linhav/span&gt;
+            &lt;span class="inline"&gt;Mais um elemento em linha&lt;/span&gt;
+
+            &lt;/style&gt;
+            .inline {
+                background-color: lightgreen;
+                border: 1px solid green;
+                padding: 5px;
+            }
+            &lt;/style&gt;
+        </pre>
+        <span class="inline">Elemento em Linha</span>
+        <span class="inline">Outro elemento em linha</span>
+        <span class="inline">Mais um elemento em linha</span>
+    </div>
+
+    <div class="main">
+        <h2>Iframes</h2>
+        <p class="p-classe">Um iframe é um elemento HTML que permite incorporar outro documento HTML dentro de uma página web. A palavra
+             "iframe" significa "inline frame" (quadro em linha), e esse elemento cria uma área retangular na página onde outro documento
+              HTML pode ser exibido.</p>
+        <p class="p-classe">Os iframes são frequentemente usados para incorporar conteúdo de outros sites em uma página da web. Por exemplo,
+             um vídeo do YouTube, um mapa do Google Maps ou um widget de mídia social podem ser incorporados em uma página usando um iframe.</p>
+        <p class="p-classe">Aqui está um exemplo simples de uso de um iframe para incorporar uma página da web:</p>
+
+        <pre>
+            &lt;h3&gt;Conteúdo da Página Principal&lt;/h3&gt;
+            &lt;p&gt;Aqui está o conteúdo da página principal.&lt;/p&gt;
+        
+            &lt;h3&gt;Conteúdo Incorporado&lt;/h3&gt;
+            &lt;iframe src="https://www.disney.com" width="600" height="400" title="Exemplo"&gt;&lt;/iframe&gt;
+        </pre>
+
+        <h3>Conteúdo da Página Principal</h3>
+        <p>Aqui está o conteúdo da página principal.</p>
+    
+        <h3>Conteúdo Incorporado</h3>
+        <iframe src="https://www.disney.com" width="600" height="400" title="Exemplo"></iframe>
+
+    </div>
+
+    <div class="main">
+        <h2>Semantics</h2>
+        <p class="p-classe">A semântica em HTML diz respeito à correta utilização dos elementos HTML para comunicar sentido e organização ao
+             conteúdo da página web. Isso implica na seleção dos elementos HTML mais apropriados para descrever o tipo de conteúdo que estão
+              sendo marcados, tornando o código HTML mais claro e fácil de entender para os desenvolvedores, além de mais acessível tanto para
+               os usuários quanto para os mecanismos de busca.</p>
+        <p class="p-classe">Alguns exemplos são: header, main, section, nav, aside, footer e etc </p>
+        <img class="magem" src="imagens/semantics.png" width="500px" height="500px">
+
+        <p class="p-classe">Ao utilizar a semântica correta em HTML, você torna seu código mais claro e legível, melhora a acessibilidade
+             para todos os usuários e ajuda os mecanismos de busca a entender e indexar melhor o conteúdo da sua página. Isso pode levar a
+              uma melhor classificação nos resultados de pesquisa e uma experiência geral mais agradável para os usuários.</p>
+    </div>
+
+    <div class="main">
+        <h2>Entities</h2>
+        <p class="p-classe">
+            Entidades HTML são códigos especiais utilizados para representar caracteres especiais, como símbolos, acentos e caracteres
+             que têm significados especiais em HTML. Esses códigos são usados porque alguns caracteres têm significados especiais em HTML
+              e podem ser interpretados de forma incorreta pelo navegador se forem usados diretamente no código HTML.</p>
+        <p class="p-classe">Por exemplo, o sinal de maior que (>) é interpretado pelo navegador como o fechamento de uma tag HTML.
+             Se você quiser exibir o sinal de maior que em seu documento HTML sem que ele seja interpretado como uma tag, você pode
+              usar a entidade HTML correspondente, que é &amp;lt;.</p>
+        <p class="p-classe">Aqui estão alguns exemplos de entidades HTML comuns:</p>
+        <ol>
+            <li>&amp;lt;: Menor que (<)</li>
+            <li>&amp;gt;: Maior que (>)</li>
+            <li>&amp;amp;: E comercial (&)</li>
+            <li>&amp;quot;: Aspas duplas (")</li>
+            <li>&amp;apos;: Aspas simples (')</li>
+        </ol>
+    </div>
+
+    <div class="main">
+        <h2>Charsets</h2>
+        <p class="p-classe">Charsets, ou conjuntos de caracteres, são conjuntos de códigos numéricos que representam caracteres em uma
+             linguagem específica. Em HTML, o charset (conjunto de caracteres) é uma meta informação que especifica qual codificação de
+              caracteres deve ser usada para interpretar o conteúdo do documento HTML.</p>
+        <p class="p-classe">A meta tag meta charset="charset-name" é usada no cabeçalho (header) do documento HTML para definir o charset.
+             Por exemplo, meta charset="UTF-8" especifica que o documento HTML está codificado usando UTF-8, que é uma codificação de
+              caracteres que abrange a maioria dos caracteres usados em praticamente todos os idiomas escritos.</p>
+        <p class="p-classe">Alguns dos conjuntos de caracteres mais comuns usados em HTML incluem:</p>
+        <ol>
+            <li>UTF-8: É o padrão recomendado para páginas da web modernas. Ele suporta uma vasta gama de caracteres e é amplamente
+                 compatível com diferentes idiomas e scripts.</li>
+            <li>ISO-8859-1: Também conhecido como Latin-1, é um conjunto de caracteres comum que suporta a maioria dos idiomas europeus.</li>
+            <li>Windows-1252: É uma extensão do ISO-8859-1 que inclui caracteres adicionais para idiomas ocidentais.</li>
+        </ol>
+        <p class="p-classe">Ao definir o charset corretamente em um documento HTML, você garante que os navegadores interpretem o texto
+             corretamente e exibam os caracteres conforme esperado. Se o charset não estiver definido corretamente, os navegadores podem
+              interpretar o texto de maneira incorreta, resultando em caracteres estranhos ou ilegíveis na página.</p>
+        <pre>
+            &lt;meta charset="UTF-8"&gt;
+        </pre>
+
+        <p class="especial">Essa tag sempre estará no head da página</p>
+    </div>
+
+    <div class="main">
+        <h2>HTML vs XHTML</h2>
+        <p class="p-classe">
+            HTML (HyperText Markup Language) e XHTML (eXtensible HyperText Markup Language) são duas versões da linguagem de marcação usada
+             para criar páginas da web. Embora tenham uma semelhança superficial e compartilhem muitas características comuns, existem
+              algumas diferenças importantes entre HTML e XHTML:</p>
+        <p class="p-classe">Sintaxe</p>
+        <ul>
+            <li>HTML: Em HTML, a sintaxe é mais flexível. Os elementos podem ser escritos em maiúsculas ou minúsculas, as tags não precisam ser fechadas
+                 e os atributos não precisam estar entre aspas.</li>
+            <li>XHTML: Em XHTML, a sintaxe é mais rigorosa e é uma versão mais restrita do XML. As tags devem ser todas em minúsculas, devem ser fechadas
+                 corretamente e os atributos devem estar entre aspas.</li>
+        </ul>
+
+        <p class="p-classe">Documentação</p>
+        <ul>
+            <li>HTML: O HTML tem uma documentação mais ampla e estabelecida, com muitos recursos e tutoriais disponíveis online.</li>
+            <li>XHTML: O XHTML é baseado em XML e segue regras mais estritas de formatação e validação. Ele é considerado mais limpo e bem-estruturado,
+                 mas pode ser mais difícil de aprender para iniciantes devido à sua sintaxe mais rigorosa.</li>
+        </ul>
+
+        <p class="p-classe">Compatibilidade</p>
+        <ul>
+            <li>HTML: O HTML é mais amplamente suportado pelos navegadores e é usado em uma variedade de contextos de desenvolvimento web.</li>
+            <li>XHTML: Embora o XHTML tenha sido proposto como a evolução natural do HTML, sua adoção não foi tão generalizada quanto o HTML. Além disso,
+                 algumas versões de XHTML foram descontinuadas ou não receberam mais suporte.</li>
+        </ul>
+
+        <p class="p-classe">Aplicações</p>
+        <ul>
+            <li>HTML: O HTML é mais comumente usado para páginas da web tradicionais, especialmente em contextos onde a compatibilidade com navegadores mais
+             antigos é uma preocupação.</li>
+            <li>XHTML: O XHTML é frequentemente usado em ambientes onde a validação estrita e a compatibilidade com outras tecnologias XML são importantes,
+                 como em aplicativos baseados em XML ou em ambientes de desenvolvimento móvel.</li>
+        </ul>
+
+        <p class="p-classe">Em resumo, HTML e XHTML são duas versões da mesma linguagem de marcação usada para criar páginas da web, cada uma com suas próprias
+             características e usos distintos. A escolha entre HTML e XHTML dependerá das necessidades específicas do projeto e das preferências do desenvolvedor.</p>
+
+        <p class="p-classe">HTML:</p>
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Exemplo em HTML&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+                &lt;p&gt;Este é um exemplo de documento HTML.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+
+        <p class="p-classe">XHTML</p>
+        <pre>
+            &lt;?xml version="1.0" encoding="UTF-8"?&gt;
+            &lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;
+            &lt;html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"&gt;
+            &lt;head&gt;
+                &lt;title&gt;Exemplo em XHTML&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Olá, Mundo!&lt;/h1&gt;
+                &lt;p&gt;Este é um exemplo de documento XHTML.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+
+    </div>
+
+    <div class="main">
+        <h2>Forms</h2>
+        <p class="p-classe">Formulários HTML (HTML forms) são elementos que permitem aos usuários interagir com uma página da web, enviando dados para o servidor web.
+             Eles são usados para coletar informações do usuário, como texto, opções selecionadas, uploads de arquivos e outros tipos de dados.</p>
+        <p class="p-classe">Um formulário HTML é definido usando a tag form, e pode conter vários elementos de entrada, como campos de texto, caixas de seleção, botões
+             de rádio, botões de opção, botões de envio e muito mais. Quando um usuário envia um formulário, os dados são enviados para o servidor web especificado na ação
+              do formulário.</p>
+        <p class="p-classe">Exemplo:</p>
+
+        <pre>
+            &lt;form action="/processar-formulario" method="post"&gt;
+                &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                &lt;input type="text" id="nome" name="nome" required&gt;
+                
+                &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" required&gt;
+                
+                &lt;label for="mensagem"&gt;Texto:&lt;/label&gt;
+                &lt;textarea id="mensagem" name="mensagem" rows="4" required&gt;&lt;/textarea&gt;
+                
+                &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+            &lt;/form&gt;
+        </pre>
+
+        <form action="/processar-formulario" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensagem">Texto:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+            
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h3>Form Attributes</h3>   
+        <p class="p-classe">Atributos de formulário HTML são atributos que podem ser usados em elementos form e elementos de entrada (input, textarea, select, etc.)
+             para controlar o comportamento e a funcionalidade dos formulários HTML. Esses atributos ajudam a definir como os dados do formulário são coletados, processados
+              e enviados.</p>
+        <p class="p-classe">Aqui estão alguns exemplos:</p>
+        <ul>
+            <li>action</li>
+            <li>method</li>
+            <li>disabled</li>
+            <li>id</li>
+            <li>value</li>
+            <li>name</li>
+            <li>placeholder</li>
+        </ul>
+        <p class="p-classe">Exemplo de um formulário HTML simples com alguns atributos comuns:</p>
+
+        <pre>
+            &lt;form action="/enviar-dados" method="post"&gt;
+                &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                &lt;input type="text" id="nome" name="nome" required&gt;&lt;br&gt;
+                
+                &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+                
+                &lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;
+                &lt;textarea id="mensagem" name="mensagem" rows="4" required&gt;&lt;/textarea&gt;&lt;br&gt;
+                
+                &lt;button type="submit"&gt;Enviar Mensagem&lt;/button&gt;
+            &lt;/form&gt;
+        </pre>
+
+        <form action="/enviar-dados" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+            
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+        <p class="p-classe">O formulário é enviado para o URL "/enviar-dados" usando o método POST form action="/enviar-dados" method="post".
+            Existem três campos no formulário: Nome, E-mail e Mensagem, cada um com um label correspondente e um campo de entrada.
+            O campo "Nome" é obrigatório (required) e é definido como input type="text" id="nome" name="nome" required.
+            O campo "E-mail" também é obrigatório e deve ser um e-mail válido (type="email").
+            O campo "Mensagem" é uma área de texto textarea que permite ao usuário inserir uma mensagem mais longa.</p>
+        
+        <h3>Form Elements</h3>
+        <p class="p-classe">Elementos de formulário HTML (form elements) são os diferentes tipos de campos ou controles que podem ser incluídos em um formulário HTML.
+             Esses elementos permitem que os usuários insiram, selecionem ou escolham dados que serão enviados para o servidor quando o formulário for submetido. Existem
+              vários tipos de elementos de formulário HTML, cada um com um propósito específico. Aqui estão alguns dos elementos de formulário mais comuns:</p>
+        <ul>
+            <li>input</li>
+            <li>label</li>
+            <li>button</li>
+            <li>textarea</li>
+            <li>select</li>
+        </ul>
+
+        <p class="p-classe">Esses são apenas alguns dos elementos de formulário mais comuns em HTML. Existem outros elementos e atributos que podem ser usados para criar formulários mais complexos
+             e personalizados, dependendo das necessidades específicas do aplicativo da web. </p>
+
+             <pre>
+                &lt;form action="/processar-formulario" method="post"&gt;
+                    &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+                    &lt;input type="text" id="nome" name="nome" required&gt;&lt;br&gt;
+                    
+                    &lt;label for="email"&gt;E-mail:&lt;/label&gt;
+                    &lt;input type="email" id="email" name="email" required&gt;&lt;br&gt;
+                    
+                    &lt;label for="mensagem"&gt;Mensagem:&lt;/label&gt;
+                    &lt;textarea id="mensagem" name="mensagem" rows="4" required&gt;&lt;/textarea&gt;&lt;br&gt;
+                    
+                    &lt;label for="sexo"&gt;Sexo:&lt;/label&gt;
+                    &lt;select id="sexo" name="sexo"&gt;
+                        &lt;option value="masculino"&gt;Masculino&lt;/option&gt;
+                        &lt;option value="feminino"&gt;Feminino&lt;/option&gt;
+                        &lt;option value="outro"&gt;Outro&lt;/option&gt;
+                    &lt;/select&gt;&lt;br&gt;
+                    
+                    &lt;label&gt;Interesses:&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="checkbox" id="interesse1" name="interesse1" value="esportes"&gt;
+                    &lt;label for="interesse1"&gt;Esportes&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="checkbox" id="interesse2" name="interesse2" value="tecnologia"&gt;
+                    &lt;label for="interesse2"&gt;Tecnologia&lt;/label&gt;&lt;br&gt;
+                    &lt;input type="checkbox" id="interesse3" name="interesse3" value="viagens"&gt;
+                    &lt;label for="interesse3"&gt;Viagens&lt;/label&gt;&lt;br&gt;
+                    
+                    &lt;label for="newsletter"&gt;
+                        &lt;input type="checkbox" id="newsletter" name="newsletter" value="sim"&gt;
+                        Desejo receber a newsletter
+                    &lt;/label&gt;&lt;br&gt;
+                    
+                    &lt;button type="submit"&gt;Enviar Mensagem&lt;/button&gt;
+                &lt;/form&gt;
+             </pre>
+
+             <form action="/processar-formulario" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br>
+                
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select><br>
+                
+                <label>Interesses:</label><br>
+                <input type="checkbox" id="interesse1" name="interesse1" value="esportes">
+                <label for="interesse1">Esportes</label><br>
+                <input type="checkbox" id="interesse2" name="interesse2" value="tecnologia">
+                <label for="interesse2">Tecnologia</label><br>
+                <input type="checkbox" id="interesse3" name="interesse3" value="viagens">
+                <label for="interesse3">Viagens</label><br>
+                
+                <label for="newsletter">
+                    <input type="checkbox" id="newsletter" name="newsletter" value="sim">
+                    Desejo receber a newsletter
+                </label><br>
+                
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+    </div>
+
+    <div class="main">
+        <h2>Input Types</h2>
+        <p class="p-classe">Os tipos de entrada (input types) em HTML definem o tipo de dados que um campo de entrada pode aceitar.
+             Eles determinam o comportamento e a aparência do campo de entrada na página da web. Aqui estão alguns dos tipos de entrada mais comuns em HTML:</p>
+        <ul>
+            <li>text</li>
+            <li>password</li>
+            <li>email</li>
+            <li>checkbox</li>
+            <li>number</li>
+        </ul>
+        <p class="p-classe">Exemplo:</p>
+        <pre>
+            &lt;label for="nome"&gt;Nome:&lt;/label&gt;
+            &lt;input type="text" id="nome" name="nome" required&gt;&lt;br&gt;
+        </pre>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+        </form>
+
+
+        <h3>Input Attributes</h3>
+        <p class="p-classe">
+            Os atributos de entrada (input attributes) em HTML são usados para configurar e controlar o comportamento dos campos de entrada input em um formulário HTML.
+             Eles fornecem informações adicionais sobre como o campo de entrada deve ser tratado pelo navegador e como os dados devem ser coletados e processados.
+              Aqui estão alguns dos atributos mais comuns de entrada em HTML:</p>
+        <ul>
+            <li>id</li>
+            <li>name</li>
+            <li>type</li>
+            <li>required</li>
+        </ul>
+        <p class="p-classe">Exemplo:</p>
+
+        <pre>
+            &lt;label for="username"&gt;Nome de usuário:&lt;/label&gt;
+            &lt;input type="text" id="username" name="username" required autofocus&gt;&lt;br&gt;
+        </pre>
+
+        <form>
+            <label for="username">Nome de usuário:</label>
+            <input type="text" id="username" name="username" required autofocus><br>
+        </form>
+
+    </div>
+
+    <div class="main">
+        <h2>Javascript</h2>
+        <p class="p-classe">JavaScript é uma linguagem de programação de alto nível, interpretada, orientada a objetos e multi-paradigma. Foi inicialmente desenvolvida
+             para ser executada em navegadores web para interagir dinamicamente com o conteúdo de páginas HTML, mas desde então se expandiu para várias outras áreas,
+             incluindo desenvolvimento web no lado do servidor (Node.js), desenvolvimento de aplicativos de desktop e móveis, e até mesmo desenvolvimento de jogos.</p>
+        <p class="p-classe">Aqui estão alguns pontos-chave sobre JavaScript:</p>
+        <ul>
+            <Li>Interatividade em Páginas Web: JavaScript é amplamente usado para criar interatividade em páginas web. Ele pode ser usado para manipular elementos HTML, responder a eventos do usuário (como cliques de mouse e pressionamentos de tecla), validar formulários, fazer requisições para servidores e atualizar o conteúdo de uma página sem recarregá-la completamente (AJAX).</Li>
+            <li>Linguagem de Script do Lado do Cliente: JavaScript é uma linguagem de script do lado do cliente, o que significa que o código é executado no navegador do usuário, não no servidor. Isso permite uma experiência mais rápida e dinâmica para os usuários, pois não há necessidade de fazer solicitações adicionais ao servidor para atualizar o conteúdo da página.</li>
+            <li>Sintaxe Simples e Flexível: JavaScript possui uma sintaxe simples e flexível, que é fácil de aprender para iniciantes e poderosa o suficiente para lidar com projetos complexos. Sua sintaxe é semelhante à de outras linguagens de programação, como Java e C, o que facilita a transição para desenvolvedores que já têm experiência em outras linguagens.</li>
+            <li>Ecossistema Rico: JavaScript tem um ecossistema muito rico, com uma grande variedade de bibliotecas e frameworks disponíveis para facilitar o desenvolvimento web. Alguns dos mais populares incluem jQuery, React.js, Angular, Vue.js e Node.js.</li>
+            <li>Orientada a Eventos: Uma das características mais importantes do JavaScript é sua natureza orientada a eventos. Os desenvolvedores podem escrever código para responder a uma variedade de eventos, como cliques de mouse, pressionamentos de tecla, submissões de formulários e carregamento de página.</li>
+        </ul>
+        
+        <p class="p-classe">JavaScript é uma parte essencial do desenvolvimento web moderno e é amplamente usado em conjunto com HTML e CSS para criar experiências interativas e dinâmicas para os usuários da web.</p>
+    
     <script src="script.js"></script>
 </body>
 
 
 <!--TUDO Q TEM Q FAZER
 
-7 - HTML Formatting
-8 - HTML Quotations
-15 - HTML Block & Inline
-19 - HTML Iframes
+
+
 20 - HTML JavaScript
-21 - HTML Semantics
-23 - HTML Entities
-26 - HTML Charsets
-27 - HTML URL Encode
-28 - HTML vs XHTML
+
 29 - HTML Forms
 30 - HTML Form Attributes
 31 - HTML Form Elements
