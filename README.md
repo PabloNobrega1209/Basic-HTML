@@ -25,12 +25,6 @@ Neste site, você encontrará uma variedade de recursos, incluindo:
 ## Sobre o Autor
 - Este projeto pessoal, concebido por @PabloNobrega1209, tem como objetivo fornecer recursos educacionais abrangentes e acessíveis sobre HTML básico, visando capacitar iniciantes e entusiastas da web com habilidades fundamentais para criar suas próprias páginas da web. Além disso, busca criar uma comunidade colaborativa onde os usuários possam compartilhar experiências, fazer perguntas e colaborar no desenvolvimento de conteúdo.
 
-## Prints do Site
-
-![imagem 1](print_site/print1.png)
-![imagem 2](print_site/print1.png)
-![imagem 3](print_site/print1.png)
-
 ## Link
 
 [Site I Love HTML](URL_do_Link)
