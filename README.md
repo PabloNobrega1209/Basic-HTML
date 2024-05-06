@@ -27,9 +27,9 @@ Neste site, você encontrará uma variedade de recursos, incluindo:
 
 ## Prints do Site
 
-!(prints_site/print1.png)
-!(prints_site/print2.png)
-!(prints_site/print3.png)
+![imagem 1](print_site/print1.png)
+![imagem 2](print_site/print1.png)
+![imagem 3](print_site/print1.png)
 
 ## Link
 
